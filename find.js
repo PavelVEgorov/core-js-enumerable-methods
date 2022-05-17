@@ -1,10 +1,10 @@
-/*function firstUnder(numbers, limit){
+function firstUnder(numbers, limit){
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] <= limit)
     return numbers[i]
   }
 }
-*/
+
 // console.log(firstUnder(, 10))
 
 const arr=[15, 12, 26, 236, 86];
