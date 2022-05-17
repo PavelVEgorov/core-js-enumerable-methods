@@ -6,6 +6,14 @@ function exclamations(strings){
   return loudStrings
 }
 
+console.log(exclamations(["lemon", "papaya", "apple", "cherry"]))
+
+const words = ["lemon", "papaya", "apple", "cherry"]; 
+
+const newWords = words.map((item, index, arr) => item.toUpperCase() + '!');
+console.log(newWords)
+  
+
 function squareAll(numbers){
   let squares = []
   for (let i = 0; i < numbers.length; i++) {
@@ -14,6 +22,14 @@ function squareAll(numbers){
   return squares
 }
 
+console.log(squareAll([15, 12, 26, 236, 86]))
+
+const numbers = [15, 12, 26, 236, 86]; 
+
+const newNumbers = numbers.map((item, index, arr) => item**2);
+console.log(newNumbers)
+
+
 function firstLetters(words){
   let letters = []
   for (let i = 0; i < words.length; i++) {
@@ -21,3 +37,10 @@ function firstLetters(words){
   }
   return letters
 }
+
+console.log(firstLetters(["Xemon", "Yapaya", "Upple", "!herry"]))
+
+const words = ["Xemon", "Yapaya", "Upple", "!herry"]; 
+
+const newWords = words.map((words) => words[0]);
+console.log(newWords)
